@@ -113,33 +113,33 @@ const Users = () => {
                     renderSkeletons()
                 ) : (
                     <table className='table-auto w-full text-center'>
-                        <thead className='bg-gray-200'>
-                            <tr>
-                                <th>SNo</th>
-                                <th>Profile</th>
-                                <th>User Name</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Account Created On</th>
-                                <th>Actions</th>
-                                <th>Delete</th>
+                        <thead className='bg-gray-200 '>
+                            <tr >
+                                <th style={{textAlign:"start"}}>SNo</th>
+                                <th style={{textAlign:"start"}}>Profile</th>
+                                <th style={{textAlign:"start"}}>User Name</th>
+                                <th style={{textAlign:"start"}} >Email</th>
+                                <th >Phone</th>
+                                <th >Account Created On</th>
+                                <th >Actions</th>
+                                <th >Delete</th>
                             </tr>
                         </thead>
                         <tbody>
                             {users.length > 0 ? (
                                 users.map((user, index) => (
-                                    <tr key={user._id} className='bg-gray-100'>
-                                        <td className='pt-4'>{index + 1}.</td>
-                                        <td className='pt-4'>
+                                    <tr key={user._id} className='bg-gray-100 text-cente  '>
+                                        <td className='pt-4 text-start'>{index + 1}.</td>
+                                        <td className='pt-4 text-start'>
                                             <img
                                                 src={user.profileImage || "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"}
                                                 alt={user.userName}
-                                                className='w-10 h-10 rounded-full'
+                                                className='w-10 h-10 rounded-full '
                                             />
                                         </td>
-                                        <td className='pt-4'>{user.userName}</td>
-                                        <td className='pt-4'>{user.email}</td>
-                                        <td className='pt-4'>{user.phone}</td>
+                                        <td className='pt-4 text-start'>{user.userName}</td>
+                                        <td className='pt-4 text-start'>{user.email}</td>
+                                        <td className='pt-4 '>{user.phone}</td>
                                         <td className='pt-4'>{new Date().toLocaleDateString()}</td>
                                         <td className='pt-4'>
                                             <Link

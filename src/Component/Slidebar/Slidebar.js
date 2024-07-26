@@ -12,8 +12,8 @@ function Slidebar() {
     <>
       <div className="w-[15%] h-[100vh]   bg-[#1D5257]  max-sm:hidden ">
         <div className="flex justify-center mb-4 pt-2">
-          <h1 className="pt-1 font-bold text-white text-xl">TranceForm</h1> 
-          <img src={`${process.env.PUBLIC_URL}/adminLogo.png`} alt="Admin Logo" className="w-8 h-8 ml-2" />
+          <h1 className="pt-1 mt- font-bold text-white text-xl">TranceForm</h1> 
+          <img src={`${process.env.PUBLIC_URL}/adminLogo.png`} alt="Admin Logo" className="w-8 h-8 ml-2 " />
         </div>
         <Divider className="bg-white" />
         <ul className="text-white ms-2 text-md font-bold">
